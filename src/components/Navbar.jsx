@@ -1,8 +1,14 @@
 import { Menu,CircleUserRound } from "lucide-react";
-
+import { Ham_Menu } from "./Ham_Menu";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [isMenuOpen, setisMenuOpen] = useState(false);
+
   return (
+    <div>
+      <Ham_Menu 
+       isOpen={isMenuOpen} onClose={()=>setisMenuOpen(false)}/>
     <div className="w-full bg-white/10 backdrop-blur-xl border- border-white/20 py-4 ">
       {/* Top-right Login/Signup */}
       <div className="absolute top-8 right-2 sm:right-6 md:right-8 flex flex-col items-center cursor-pointer group">
@@ -19,7 +25,8 @@ export const Navbar = () => {
       {/* Burger Menu */}
        <div className="absolute top-8 left-2 sm:left-6 md:left-8 flex flex-col items-center cursor-pointer group">
           <Menu
-           className="text-white group-hover:text-orange-950 transition-colors duration-200 
+            onClick={()=>setisMenuOpen(true)}
+            className="text-white group-hover:text-orange-950 transition-colors duration-200 
                w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16"
   />
        </div>
@@ -50,6 +57,7 @@ export const Navbar = () => {
       </nav>
 
       
+    </div>
     </div>
   );
 };
