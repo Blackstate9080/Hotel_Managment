@@ -1,7 +1,30 @@
+import { Menu,CircleUserRound } from "lucide-react";
+
+
 export const Navbar = () => {
   return (
     <div className="w-full bg-white/10 backdrop-blur-xl border- border-white/20 py-4 ">
-
+      {/* Top-right Login/Signup */}
+      <div className="absolute top-8 right-2 sm:right-6 md:right-8 flex flex-col items-center cursor-pointer group">
+        <CircleUserRound 
+          
+          className="text-white group-hover:text-orange-950 transition-colors duration-200 
+          w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16" 
+        />
+        <span className="text-white group-hover:text-orange-950 transition-colors duration-200
+        ">
+          Login
+        </span>
+      </div>
+      {/* Burger Menu */}
+       <div className="absolute top-8 left-2 sm:left-6 md:left-8 flex flex-col items-center cursor-pointer group">
+          <Menu
+           className="text-white group-hover:text-orange-950 transition-colors duration-200 
+               w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16"
+  />
+       </div>
+      
+      
       {/* Logo Centered inside container */}
       <div className="max-w-7xl mx-auto flex justify-center">
         <img 
@@ -17,7 +40,7 @@ export const Navbar = () => {
       </div>
 
       {/* Nav Links Centered */}
-      <nav className="flex justify-center gap-8 text-white text-lg font-extralight">
+      <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-white text-base sm:text-lg md:text-2xl font-extralight">
         <a href="#" className="hover:text-orange-950">Home</a>
         <a href="#" className="hover:text-orange-950">Rooms</a>
         <a href="#" className="hover:text-orange-950">Pools</a>
