@@ -21,13 +21,14 @@ export const Home = () => {
         </p>
         <div className="text-center mt-4">
         <Link
-          to="/booking"
-          className="mt-6 inline-block border border-white text-white px-8 py-3 rounded-full text-lg tracking-wide
-             font-light uppercase transition duration-300 ease-in-out hover:bg-white hover:text-black shadow-sm
-             hover:shadow-md"
-        >
-          Book Now
-        </Link>
+  to="/booking"
+  className="mt-6 inline-block bg-white/10 border border-white text-white px-8 py-3 rounded-full text-lg tracking-wide
+    font-light uppercase transition duration-300 ease-in-out hover:bg-white hover:text-black
+    hover:shadow-[0_12px_35px_rgba(0,0,0,1)] backdrop-opacity-40-md"
+>
+  Book Now
+</Link>
+
       </div>
                 
       </Home_Background>
