@@ -13,7 +13,7 @@ export const Navbar = () => {
       {/* Top-right Login/Signup */}
       <div className="absolute top-8 right-2 sm:right-6 md:right-8 flex flex-col items-center cursor-pointer group">
         <CircleUserRound 
-          
+          strokeWidth={1}
           className="text-white group-hover:text-orange-950 transition-colors duration-200 
           w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16" 
         />
@@ -25,8 +25,9 @@ export const Navbar = () => {
       {/* Burger Menu */}
        <div className="absolute top-8 left-2 sm:left-6 md:left-8 flex flex-col items-center cursor-pointer group">
           <Menu
+            strokeWidth={1}
             onClick={()=>setisMenuOpen(true)}
-            className="text-white group-hover:text-orange-950 transition-colors duration-200 
+            className=" text-white group-hover:text-orange-950 transition-colors duration-200 
                w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16"
   />
        </div>

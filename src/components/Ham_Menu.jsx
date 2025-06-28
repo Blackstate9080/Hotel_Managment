@@ -3,7 +3,7 @@ import { X } from "lucide-react"
 export const Ham_Menu =({isOpen, onClose}) =>{
     return(
         <div 
-        className={`fixed top-0 left-0 h-full w-1/3 bg-white/20 backdrop-blur-md text-white z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 left-0 h-full w-4/5 md:w-1/3 xl:w-1/6 bg-white/20 backdrop-blur-md text-white z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         >
             <div className="relative px-4 py-4 border-b border-white/30">
             {/* Close Icon */}
@@ -17,13 +17,13 @@ export const Ham_Menu =({isOpen, onClose}) =>{
             {/* Circular Placeholder for Profile Image */}
                 <img 
                 src="/image.png"
-                className="mx-1 w-28 h-28 rounded-full bg-white/30"/>
+                className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/30"/>
                 <span className="-mr-2 text-3xl font-semibold">Hi,</span>
                 <span className=" -mr-2 -mt-2 text-3xl font-semibold">Iqbal Singh</span>
   </div>
 </div>
         
-        <div className="flex flex-col p-14 gap-10 text-3xl font-extralight">
+        <div className="flex flex-col p-14 gap-10 text-xl sm:text-2xl md:text-3xl font-extralight">
             <a href="#" className="hover:text-orange-950">Profile</a>
             <a href="#" className="hover:text-orange-950">Food orders</a>
             <a href="#" className="hover:text-orange-950">My Bookings</a>
