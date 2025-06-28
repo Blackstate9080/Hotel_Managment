@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+       fontFamily:{
+        'cabin-sketch': ['"Cabin Sketch"', 'sans-serif'],
+       },
        keyframes: {
         blob1: {
           '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
