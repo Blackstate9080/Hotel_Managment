@@ -15,7 +15,7 @@ export const Navbar = () => {
         <CircleUserRound 
           strokeWidth={1}
           className="text-white group-hover:text-orange-950 transition-colors duration-200 
-          w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16" 
+          w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12" 
         />
         <span className="text-white group-hover:text-orange-950 transition-colors duration-200
         ">
@@ -23,12 +23,12 @@ export const Navbar = () => {
         </span>
       </div>
       {/* Burger Menu */}
-       <div className="absolute top-8 left-2 sm:left-6 md:left-8 flex flex-col items-center cursor-pointer group">
+       <div className="absolute top-11 left-2 sm:left-6 md:left-8 flex flex-col items-center cursor-pointer group">
           <Menu
             strokeWidth={1}
             onClick={()=>setisMenuOpen(true)}
             className=" text-white group-hover:text-orange-950 transition-colors duration-200 
-               w-10 h-10 sm:w-20 sm:h-20 md:w-16 md:h-16"
+               w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12"
   />
        </div>
       
@@ -48,7 +48,7 @@ export const Navbar = () => {
       </div>
 
       {/* Nav Links Centered */}
-      <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-white text-base sm:text-lg md:text-2xl font-extralight">
+      <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-white text-base sm:text-lg md:text-xl font-extralight">
         <a href="#" className="hover:text-orange-950">Home</a>
         <a href="#" className="hover:text-orange-950">Rooms</a>
         <a href="#" className="hover:text-orange-950">Pools</a>

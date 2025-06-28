@@ -23,7 +23,7 @@ export const Ham_Menu =({isOpen, onClose}) =>{
   </div>
 </div>
         
-        <div className="flex flex-col p-14 gap-10 text-xl sm:text-2xl md:text-3xl font-extralight">
+        <div className="flex flex-col p-14 gap-7 text-xl sm:text-2xl md:text-2xl font-extralight">
             <a href="#" className="hover:text-orange-950">Profile</a>
             <a href="#" className="hover:text-orange-950">Food orders</a>
             <a href="#" className="hover:text-orange-950">My Bookings</a>
