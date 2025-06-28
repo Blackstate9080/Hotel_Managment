@@ -3,7 +3,7 @@ import { X } from "lucide-react"
 export const Ham_Menu =({isOpen, onClose}) =>{
     return(
         <div 
-        className={`fixed top-0 left-0 h-full w-4/5 md:w-1/3 xl:w-1/6 bg-white/20 backdrop-blur-md text-white z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 left-0 h-full w-4/6 md:w-1/3 xl:w-1/6 bg-white/20 backdrop-blur-md text-white z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         >
             <div className="relative px-4 py-4 border-b border-white/30">
             {/* Close Icon */}
