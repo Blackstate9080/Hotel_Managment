@@ -18,12 +18,12 @@ export const Ham_Menu =({isOpen, onClose}) =>{
                 <img 
                 src="/image.png"
                 className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/30"/>
-                <span className="-mr-2 text-3xl font-semibold">Hi,</span>
-                <span className=" -mr-2 -mt-2 text-3xl font-semibold">Iqbal Singh</span>
+                <span className="-mr-2 text-2xl md:text-3xl font-semibold">Hi,</span>
+                <span className=" -mr-2 -mt-2 text-2xl md:text-3xl font-semibold">Iqbal Singh</span>
   </div>
 </div>
         
-        <div className="flex flex-col p-14 gap-7 text-xl sm:text-2xl md:text-2xl font-extralight">
+        <div className="flex flex-col p-14 py-7 px-10 gap-4 md:gap-7 text-lg sm:text-2xl md:text-2xl font-extralight">
             <a href="#" className="hover:text-orange-950">Profile</a>
             <a href="#" className="hover:text-orange-950">Food orders</a>
             <a href="#" className="hover:text-orange-950">My Bookings</a>

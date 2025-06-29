@@ -1,55 +1,35 @@
+import { Background } from "../components/Background";
 import { Navbar } from "../components/Navbar";
+import { Room_Background } from "../components/Rooms/Room_Background";
+import { Link } from "react-router-dom";
 
 export const Rooms = () => {
-  const rooms = [
-    {
-      title: "Deluxe Suite",
-      image: "/1_room.jpg",
-      description: "Spacious suite with king-sized bed and city view.",
-    },
-    {
-      title: "Luxury Room",
-      image: "/2_room.jpg",
-      description: "Elegant room with modern amenities and private balcony.",
-    },
-    {
-      title: "Standard Room",
-      image: "/3_room.jpg",
-      description: "Comfortable room perfect for solo travelers or couples.",
-    },
-  ];
-
   return (
-    <div className="relative min-h-screen bg-gray-900 text-white">
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
-
-      {/* Navbar */}
-      <div className="relative z-10">
+    <Background>
+      <Room_Background>
         <Navbar />
-      </div>
+        
+        <h1 className=" mt-24 md:mt-48 text-5xl  text-white drop-shadow-md text-center leading-tight">
+        <div className="text-white text-4xl md:text-6xl font-extralight">Discover Our Elegant</div>
+        <div className="text-white text-5xl md:text-6xl font-cabin-sketch">Rooms</div>
+        </h1>
+        <p className="text-base md:text-xl text-center font-extralight text-white max-w-2xl mx-auto mb-6  px-4 py-2 rounded-3xl">
+          Each room is crafted with comfort and sophistication in mind — from luxurious suites with panoramic views to cozy chambers that blend modern style with timeless elegance. 
+    Whether you're here for leisure or business, our rooms offer an unmatched stay.
+        </p>
+        <div className="text-center mt-4">
+        <Link
+  to="/booking"
+  className="mt-6 inline-block bg-white/10 border border-white text-white px-8 py-3 rounded-full text-lg tracking-wide
+    font-light uppercase transition duration-300 ease-in-out hover:bg-white hover:text-black
+    hover:shadow-[0_12px_35px_rgba(0,0,0,1)] backdrop-opacity-40-md"
+>
+  Book Now
+</Link>
 
-      {/* Page Title */}
-      <div className="relative z-10 text-center pt-28">
-        <h1 className="text-4xl font-bold">🛏️ Our Rooms</h1>
-        <p className="text-gray-300 mt-2">Choose from a variety of room types to suit your stay.</p>
       </div>
-
-      {/* Room Cards */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-16 max-w-6xl mx-auto">
-        {rooms.map((room, idx) => (
-          <div
-            key={idx}
-            className="bg-white/10 backdrop-blur-md rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform"
-          >
-            <img src={room.image} alt={room.title} className="w-full h-56 object-cover" />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold">{room.title}</h2>
-              <p className="text-gray-300 mt-2">{room.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+                
+      </Room_Background>
+    </Background>
   );
 };

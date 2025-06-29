@@ -9,12 +9,12 @@ export const Home = () => {
       <Home_Background>
         <Navbar />
         
-        <h1 className="mt-48 text-5xl  text-white drop-shadow-md text-center leading-tight">
+        <h1 className=" mt-20 md:mt-48 text-5xl  text-white drop-shadow-md text-center leading-tight">
         <div className="font-light">Welcome</div>
         <div className="text-gray-300 font-light">to</div>
         <div className="text-white text-7xl font-cabin-sketch">The Hotel</div>
         </h1>
-        <p className="text-xl text-center font-extralight text-white max-w-2xl mx-auto mb-6 bg-black/30 px-4 py-2 rounded-3xl">
+        <p className="text-base md:text-xl text-center font-extralight text-white max-w-2xl mx-auto mb-6  px-4 py-2 rounded-3xl">
           Welcome to our premium hotel booking platform — where comfort meets luxury.
           Whether you're planning a romantic getaway, a family vacation, or a business
           trip, we have the perfect stay waiting for you.

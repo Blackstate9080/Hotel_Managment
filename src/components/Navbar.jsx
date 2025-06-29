@@ -50,7 +50,7 @@ export const Navbar = () => {
         {/* Nav Links */}
         
 
-        <nav className="mt-2 flex flex-wrap justify-center gap-2 sm:gap-6 md:gap-8 text-white text-sm sm:text-lg md:text-xl font-extralight">
+        <nav className="mt-2 flex flex-wrap justify-center gap-0 sm:gap-6 md:gap-8 text-white text-sm sm:text-lg md:text-xl font-extralight">
   {["home", "rooms", "pools", "booking", "events", "contact"].map((section) => {
     const isActive = location.pathname === (section === "home" ? "/" : `/${section}`);
     return (
