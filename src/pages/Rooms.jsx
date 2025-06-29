@@ -10,7 +10,7 @@ export const Rooms = () => {
         <Navbar />
         
         <h1 className=" mt-24 md:mt-48 text-5xl  text-white drop-shadow-md text-center leading-tight">
-        <div className="text-white text-4xl md:text-6xl font-extralight">Discover Our Elegant</div>
+        <div className="text-white text-3xl md:text-5xl font-extralight">Discover Our Elegant</div>
         <div className="text-white text-5xl md:text-6xl font-cabin-sketch">Rooms</div>
         </h1>
         <p className="text-base md:text-xl text-center font-extralight text-white max-w-2xl mx-auto mb-6  px-4 py-2 rounded-3xl">
