@@ -16,6 +16,9 @@ export const Restaurant = () => {
           <div className="text-white text-5xl md:text-6xl font-cabin-sketch">
             Our Signature Restaurant
           </div>
+          <div className="text-white text-[1px] md:text-[1px] font-cabin-sketch">
+            For AASHIYA
+          </div>
         </h1>
 
         <p className="text-base md:text-xl text-center font-extralight text-white max-w-2xl mx-auto mb-6 px-4 py-2 rounded-3xl">
