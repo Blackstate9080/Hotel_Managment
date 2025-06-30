@@ -16,10 +16,10 @@ export const Navbar = () => {
         <div className="absolute top-4 right-2 sm:right-6 md:right-8 flex flex-col items-center cursor-pointer group">
           <CircleUserRound
             strokeWidth={1}
-            className="text-white group-hover:text-orange-950 transition-colors duration-200 
+            className="text-white group-hover:text-gray-900 transition-colors duration-200 
             w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12"
           />
-          <span className="text-white group-hover:text-orange-950 transition-colors duration-200">
+          <span className="text-white group-hover:text-gray-900 transition-colors duration-200">
             Login
           </span>
         </div>
@@ -29,7 +29,7 @@ export const Navbar = () => {
           <Menu
             strokeWidth={1}
             onClick={() => setisMenuOpen(true)}
-            className="text-white group-hover:text-orange-950 transition-colors duration-200 
+            className="text-white group-hover:text-gray-900 transition-colors duration-200 
             w-10 h-10 sm:w-20 sm:h-20 md:w-12 md:h-12"
           />
         </div>

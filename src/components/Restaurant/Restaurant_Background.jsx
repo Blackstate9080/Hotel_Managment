@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "/Restaurant/Restaurant_2.jpg",
-  "/Restaurant/Restaurant_3.jpg",
-  "/Restaurant/Restaurant_4.jpg",
-  "/Restaurant/Restaurant_5.jpg",
-  "/Restaurant/Restaurant_6.jpg",
+  "/Restaurant/Restaurant_2.webp",
+  "/Restaurant/Restaurant_3.webp",
+  "/Restaurant/Restaurant_4.webp",
+  "/Restaurant/Restaurant_5.webp",
+  "/Restaurant/Restaurant_6.webp",
 ];
 
 export const Restaurant_Background = ({ children }) => {

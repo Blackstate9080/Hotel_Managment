@@ -8,7 +8,7 @@ export const Ham_Menu =({isOpen, onClose}) =>{
             <div className="relative px-4 py-4 border-b border-white/30">
             {/* Close Icon */}
             <X
-                className="absolute top-4 right-4 w-6 h-6 cursor-pointer hover:text-orange-950"
+                className="absolute top-4 right-4 w-6 h-6 cursor-pointer hover:text-gray-900"
                 onClick={onClose}
             />
             <div className="flex flex-col items-center gap-2 mt-2">
@@ -24,15 +24,15 @@ export const Ham_Menu =({isOpen, onClose}) =>{
 </div>
         
         <div className="flex flex-col p-14 py-7 px-10 gap-4 md:gap-7 text-lg sm:text-2xl md:text-2xl font-extralight">
-            <a href="#" className="hover:text-orange-950">Profile</a>
-            <a href="#" className="hover:text-orange-950">Food orders</a>
-            <a href="#" className="hover:text-orange-950">My Bookings</a>
-            <a href="#" className="hover:text-orange-950">Payments</a>
-            <a href="#" className="hover:text-orange-950">Booking History</a>
-            <a href="#" className="hover:text-orange-950">Service Requests</a>
-            <a href="#" className="hover:text-orange-950">Support</a>
-            <a href="#" className="hover:text-orange-950">Change Password</a>
-            <a href="#" className="hover:text-orange-950">Logout</a>
+            <a href="#" className="hover:text-gray-900">Profile</a>
+            <a href="#" className="hover:text-gray-900">Food orders</a>
+            <a href="#" className="hover:text-gray-900">My Bookings</a>
+            <a href="#" className="hover:text-gray-900">Payments</a>
+            <a href="#" className="hover:text-gray-900">Booking History</a>
+            <a href="#" className="hover:text-gray-900">Service Requests</a>
+            <a href="#" className="hover:text-gray-900">Support</a>
+            <a href="#" className="hover:text-gray-900">Change Password</a>
+            <a href="#" className="hover:text-gray-900">Logout</a>
             </div>
         </div>
        
