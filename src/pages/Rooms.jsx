@@ -9,7 +9,7 @@ export const Rooms = () => {
       <Room_Background>
         <Navbar />
         
-        <h1 className=" mt-24 md:mt-48 text-5xl  text-white drop-shadow-md text-center leading-tight">
+        <h1 className=" mt-72 md:mt-80 text-5xl  text-white drop-shadow-md text-center leading-tight">
         <div className="text-white text-3xl md:text-5xl font-extralight">Discover Our Elegant</div>
         <div className="text-white text-5xl md:text-6xl font-cabin-sketch">Rooms</div>
         </h1>

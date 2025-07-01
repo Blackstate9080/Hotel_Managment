@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
-import  './index.css';
-import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { SplashScreen } from "./components/SplashScreen/SplashScreen.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 import { Home } from "./pages/Home";
 import { Rooms } from "./pages/Rooms";
 import { Restaurant } from "./pages/Restaurant";
@@ -11,27 +12,40 @@ import { Events } from "./pages/Events";
 import { Contact } from "./pages/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [showSplash, setShowSplash] = useState(true); // Not `isSplashDone`
+  const [splashDone, setSplashDone] = useState(false);
+  const [dropNavbar, setDropNavbar] = useState(false);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDropNavbar(true); // Trigger Navbar drop
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-   
-      <Router>
-         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/rooms' element={<Rooms />} />
-          <Route path='/Restaurant' element={<Restaurant />} />
-          <Route path='/Gym' element={<Gym />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/contact' element={<Contact />} />
-         </Routes>
-      </Router>
-     {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
+      {/* Splash Screen */}
+      {!splashDone && <SplashScreen onFinish={() => setSplashDone(true)} />}
 
+      <div className={`${!splashDone ? 'pointer-events-none select-none overflow-hidden' : ''}`}>
+        {/* Router wraps everything that needs useLocation */}
+        <Router>
+          {/* ✅ Navbar is now inside Router */}
+          <Navbar dropIn={dropNavbar} />
+
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/rooms' element={<Rooms />} />
+            <Route path='/Restaurant' element={<Restaurant />} />
+            <Route path='/Gym' element={<Gym />} />
+            <Route path='/events' element={<Events />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </Router>
+      </div>
     </>
   );
-};
+}
 
 export default App;

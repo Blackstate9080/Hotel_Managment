@@ -9,7 +9,7 @@ export const Restaurant = () => {
       <Restaurant_Background>
         <Navbar />
         
-        <h1 className="mt-24 md:mt-48 text-5xl text-white drop-shadow-md text-center leading-tight">
+        <h1 className="mt-60 md:mt-96 text-5xl text-white drop-shadow-md text-center leading-tight">
           <div className="text-white text-3xl md:text-5xl font-extralight">
             Dine in Style at
           </div>
