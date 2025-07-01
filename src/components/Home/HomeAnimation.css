@@ -1,0 +1,61 @@
+/* Gray Overlay Background */
+.gray-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  z-index: 10;
+  transition: transform 1s ease-in-out;
+}
+
+/* Swipe it off screen */
+.gray-overlay.swipe-out {
+  transform: translateX(100%);
+}
+
+/* Text Container */
+.hero-text-container {
+  position: relative;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  text-align: center;
+  padding-top: 14rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Text fades in */
+.hero-text-container.fade-in {
+  opacity: 1;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+.hero-subtitle {
+  color: white;
+  max-width: 700px;
+  margin: auto;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}

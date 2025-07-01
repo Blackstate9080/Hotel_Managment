@@ -13,7 +13,7 @@ export const Navbar = ({ dropIn }) => {
       <Ham_Menu isOpen={isMenuOpen} onClose={() => setisMenuOpen(false)} />
 
       <div
-  className={`fixed top-0 left-0 w-full z-40 transition-transform transition-opacity duration-700 ease-out
+  className={`fixed top-0 left-0 w-full z-40 transition-transform-opacity duration-700 ease-out
     ${dropIn ? "translate-y-0 opacity-100 pointer-events-auto" : "-translate-y-20 opacity-0 pointer-events-none"}`}
 >
 
