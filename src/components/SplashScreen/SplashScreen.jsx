@@ -35,7 +35,7 @@ export const SplashScreen = ({ onFinish }) => {
 
       {!hideLogo && (
         <div className="absolute inset-0 z-40 flex items-center justify-center">
-        <Hotel_logo className={`w-40 h-40 ${fadeOutLogo ? "opacity-0 transition-opacity duration-1000" : "opacity-100"}`} />
+        <Hotel_logo className={`w-28 h-28 md:w-40 md:h-40 ${fadeOutLogo ? "opacity-0 transition-opacity duration-1000" : "opacity-100"}`} />
       </div>
       )}
     </div>

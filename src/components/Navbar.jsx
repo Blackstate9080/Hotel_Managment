@@ -41,7 +41,10 @@ export const Navbar = ({ dropIn }) => {
 
           {/* Logo */}
           <div className="max-w-7xl -mt-2 md:mx-auto md:mt-2 flex justify-center">
-            <Hotel_logo className="w-20 h-20 md:w-24 md:h-24 animate-text-gradient" />
+            <Link to='/' >
+            <Hotel_logo 
+            className="w-20 h-20 md:w-24 md:h-24 animate-text-gradient cursor-pointer" />
+          </Link>
           </div>
 
           <div className="w-full -mt-3">

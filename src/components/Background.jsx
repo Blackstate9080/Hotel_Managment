@@ -1,27 +1,25 @@
 export const Background = ({ children }) => {
   return (
-    <div className="relative min-h-screen w-full bg-orange-300 overflow-hidden">
-      {/* Animated Orange Gradient Blobs */}
-      
-      {/* Blob 1 – Soft & bright (upper left) */}
-      <div className="absolute top-[-100px] left-[-100px] w-[500px] h-[500px] 
-        bg-gradient-to-tr from-orange-100 via-orange-200 to-orange-400 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob1">
+    <div className="relative min-h-screen w-full bg-[#0a0a0a] overflow-hidden">
+      {/* Blob 1 – muted silver glow (top-left) */}
+      <div className="absolute top-[-120px] left-[-120px] w-[600px] h-[600px] 
+        bg-gradient-to-tr from-[#3a3a3a] via-[#4a4a4a] to-[#6a6a6a]
+        rounded-full mix-blend-screen filter blur-[140px] opacity-50 animate-blob1">
       </div>
 
-      {/* Blob 2 – Deep & warm (upper right) */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] 
-        bg-gradient-to-tr from-orange-500 via-orange-600 to-orange-700 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob2">
+      {/* Blob 2 – deeper shadowed glow (top-right) */}
+      <div className="absolute top-[-100px] right-[-100px] w-[700px] h-[700px] 
+        bg-gradient-to-br from-[#2a2a2a] via-[#1f1f1f] to-black 
+        rounded-full mix-blend-screen filter blur-[140px] opacity-50 animate-blob2">
       </div>
 
-      {/* Blob 3 – Rich & moody (bottom center) */}
-      <div className="absolute bottom-[-100px] left-1/4 w-[600px] h-[600px] 
-        bg-gradient-to-tr from-orange-700 via-orange-800 to-orange-900 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob3">
+      {/* Blob 3 – cool moody highlight (bottom-center) */}
+      <div className="absolute bottom-[-100px] left-[25%] w-[700px] h-[700px] 
+        bg-gradient-to-tr from-[#4e4e4e] via-[#2a2a2a] to-[#0d0d0d]
+        rounded-full mix-blend-screen filter blur-[130px] opacity-45 animate-blob3">
       </div>
 
-      {/* Foreground Content */}
+      {/* Foreground content */}
       <div className="relative z-10">{children}</div>
     </div>
   );

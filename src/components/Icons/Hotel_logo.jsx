@@ -9,15 +9,15 @@ const Hotel_logo = (props) => (
     {...props}
   >
     <defs>
-    <linearGradient id="hotelGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%">
-        <animate attributeName="stop-color" values="#ffffff;#a7a7a7;#ffffff" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%">
-        <animate attributeName="stop-color" values="#a7a7a7;#ffffff;#a7a7a7" dur="6s" repeatCount="indefinite" />
-      </stop>
-    </linearGradient>
-  </defs>
+      <linearGradient id="hotelGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%">
+          <animate attributeName="stop-color" values="#ffffff;#a7a7a7;#ffffff" dur="6s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%">
+          <animate attributeName="stop-color" values="#a7a7a7;#ffffff;#a7a7a7" dur="6s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
 
     <g fill="url(#hotelGradient)" stroke="url(#hotelGradient)">
     <path
