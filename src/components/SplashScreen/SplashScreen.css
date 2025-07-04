@@ -38,12 +38,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   z-index: 2;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   opacity: 1;
+
+  background: linear-gradient(to right, #ffffff, #858585, #ffffff);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: text-gradient 2s ease-in-out infinite alternate;
 }
+
+/* Keyframes for animated gradient */
+@keyframes text-gradient {
+  0%, 15% {
+    background-position: 0% 50%;
+  }
+  85%, 100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 .fade-out {
   opacity: 0;

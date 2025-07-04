@@ -6,11 +6,23 @@ export default {
   ],
   theme: {
     extend: {
+        backgroundSize: {
+          "200": "200% 200%",
+        },
       
        fontFamily:{
         'cabin-sketch': ['"Cabin Sketch"', 'sans-serif'],
        },
        keyframes: {
+        "text-gradient": {
+          "0%, 15%": {
+            "background-position": "0% 50%",
+          },
+          "85%, 100%": {
+            "background-position": "100% 50%",
+          },
+        },
+        
         slideUp: {
           '0%': { opacity: 0, transform: 'translateY(40px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
@@ -34,6 +46,7 @@ export default {
         blob3: 'blob3 5s ease-in-out infinite',
         slideUp: 'slideUp 0.8s ease-out forwards',
         slideUpDelay: 'slideUp 0.8s ease-out forwards 0.5s',
+        "text-gradient": "text-gradient 2s ease-in-out infinite alternate",
       },
       safelist: [
   'opacity-0', 'opacity-100',

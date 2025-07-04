@@ -41,27 +41,31 @@ export const Home = () => {
       <Home_Background>
         <Navbar />
 
-        <h1 className="mt-60 md:mt-80 text-5xl text-white drop-shadow-md text-center leading-tight">
+        <h1 className="mt-60 md:mt-80 text-4xl md:text-5xl text-white drop-shadow-md text-center leading-tight">
           <div
-            className={`font-light transition-all duration-700 ${
+            className={`lora-sans transition-all duration-700 ${
               animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
             Welcome
           </div>
           <div
-            className={`text-gray-300 font-light transition-all duration-700 delay-200 ${
+            className={`text-white text-4xl md:text-5xl lora-sans transition-all duration-700 delay-200 ${
               animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
             to
           </div>
           <div
-            className={`text-white text-7xl font-cabin-sketch transition-all duration-700 delay-500 ${
+            className={`text-6xl md:text-7xl cinzel-decorative-regular transition-all duration-700 delay-500 ${
               animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
-            The Hotel
+            <span className="bg-gradient-to-r from-[#ffffff] via-[#a7a7a7] to-[#ffffff] 
+                   bg-clip-text text-transparent 
+                   bg-[length:200%_200%] animate-text-gradient">
+              The Hotel
+            </span>
           </div>
         </h1>
 

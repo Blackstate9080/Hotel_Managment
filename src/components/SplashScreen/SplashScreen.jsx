@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./SplashScreen.css";
+import Hotel_logo from "../Icons/Hotel_logo.jsx";
 
 export const SplashScreen = ({ onFinish }) => {
   const [startSplit, setStartSplit] = useState(false);
@@ -33,11 +34,9 @@ export const SplashScreen = ({ onFinish }) => {
       <div className={`splash-half bottom ${startSplit ? "animate-down" : ""}`}></div>
 
       {!hideLogo && (
-        <img
-          src="/Hotel_logo.svg"
-          alt="Logo"
-          className={`splash-logo ${fadeOutLogo ? "fade-out" : ""}`}
-        />
+        <div className="absolute inset-0 z-40 flex items-center justify-center">
+        <Hotel_logo className={`w-40 h-40 ${fadeOutLogo ? "opacity-0 transition-opacity duration-1000" : "opacity-100"}`} />
+      </div>
       )}
     </div>
   );

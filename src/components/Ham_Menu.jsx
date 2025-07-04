@@ -29,7 +29,7 @@ export const Ham_Menu = ({ isOpen, onClose }) => {
           {/* Avatar + Name */}
           <div className="flex flex-col items-center gap-2 mt-2">
             <img
-              src="/image.png"
+              src="/Others/image.png"
               alt="Profile"
               className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/30"
             />

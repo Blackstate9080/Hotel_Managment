@@ -2,6 +2,7 @@ import { Menu, CircleUserRound } from "lucide-react";
 import { Ham_Menu } from "./Ham_Menu";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Hotel_logo from "./Icons/Hotel_logo";
 
 export const Navbar = ({ dropIn }) => {
   const location = useLocation();
@@ -39,12 +40,8 @@ export const Navbar = ({ dropIn }) => {
           </div>
 
           {/* Logo */}
-          <div className="-mt-4 max-w-7xl mx-auto flex justify-center">
-            <img
-              src="/Hotel_logo.svg"
-              alt="Hotel Logo"
-              className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] object-contain"
-            />
+          <div className="max-w-7xl -mt-2 md:mx-auto md:mt-2 flex justify-center">
+            <Hotel_logo className="w-20 h-20 md:w-24 md:h-24 animate-text-gradient" />
           </div>
 
           <div className="w-full -mt-3">

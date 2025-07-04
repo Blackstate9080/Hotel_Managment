@@ -21,9 +21,9 @@ export const Restaurant = () => {
       <Restaurant_Background>
         <Navbar />
         
-        <h1 className="mt-60 md:mt-80 text-3xl text-white drop-shadow-md text-center leading-tight">
+        <h1 className="mt-60 md:mt-80 text-4xl md:text-5xl text-white drop-shadow-md text-center leading-tight">
           <div
-            className={`font-light transition-opacity-transform duration-700 ${
+            className={`lora-sans transition-opacity-transform duration-700 ${
               animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
             }`}
           >
@@ -31,14 +31,18 @@ export const Restaurant = () => {
           </div>
           
           <div
-            className={`text-white text-5xl font-cabin-sketch transition-opacity-transform duration-700 delay-500 ${
-              animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+            className={`text-5xl md:text-7xl cinzel-decorative-regular transition-all duration-700 delay-500 ${
+              animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
-            Our Signature Restaurant
+            <span className="bg-gradient-to-r from-[#ffffff] via-[#a7a7a7] to-[#ffffff] 
+                   bg-clip-text text-transparent 
+                   bg-[length:200%_200%] animate-text-gradient">
+              Our Signature Restaurant
+            </span>
           </div>
           <div
-            className={`text-white text-[4px] font-extralight transition-opacity-transform duration-700 delay-500 ${
+            className={`text-white text-[2px] lora-sans transition-opacity-transform duration-700 delay-500 ${
               animateText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
             }`}
           >
